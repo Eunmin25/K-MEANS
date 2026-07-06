@@ -1,3 +1,15 @@
+# 1) 프로젝트 루트로 이동
+cd "/Users/eunmin/Downloads/openfhe-statistics-main 5"
+# 2) (선택) 이전 빌드 제거
+rm -rf build
+# 3) CMake configure
+cmake -S . -B build
+# 4) OkC 타깃 빌드
+cmake --build build --target OkC -j
+# 5) 실행
+./build/OkC
+
+
 # Ranking, Order Statistics, and Sorting under CKKS
 
 This repository provides a library for performing ranking, order statistics, and sorting operations using the CKKS (Cheon-Kim-Kim-Song) homomorphic encryption scheme.
